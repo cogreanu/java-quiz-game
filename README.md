@@ -1,3 +1,6 @@
+# Note
+I have tried to move the project from the university's gitlab server, but due to there being a file that exceeds github's size limit in the remote repository, and us losing rights to push changes, I had to erase the old .git folder from the project.
+
 ## Description of project
 
 'Quizzzz' is a quiz game, where players can play individually or compete against others, while also increasing
