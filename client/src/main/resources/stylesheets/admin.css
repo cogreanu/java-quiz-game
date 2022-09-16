@@ -1,0 +1,24 @@
+#exitButton {
+    -fx-background-color: -exit-button-color;
+}
+
+#importButton {
+    -fx-background-color: -background-color;
+}
+
+.table-view {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-padding: 0px;
+    -fx-background-color: white;
+}
+
+.table-view .table-column {
+    -fx-font-family: Calibri;
+    -fx-font-size: 18;
+    -fx-font-weight: bolder;
+}
+
+.table-view .column-header {
+    -fx-background-color: -button-color;
+}

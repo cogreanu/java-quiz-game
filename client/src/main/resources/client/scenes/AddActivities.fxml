@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0"
+            prefWidth="1600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.scenes.AddActivitiesCtrl">
+    <children>
+        <Button id="exitButton" layoutX="350.0" layoutY="650.0" mnemonicParsing="false" onAction="#back"
+                prefHeight="100.0" prefWidth="350.0" text="Exit"/>
+        <Button layoutX="900.0" layoutY="650.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                minWidth="-Infinity" mnemonicParsing="false" onAction="#ok" prefHeight="100.0" prefWidth="350.0"
+                text="Add"/>
+        <TextField fx:id="title" layoutX="650.0" layoutY="150.0" prefHeight="50.0" prefWidth="300.0"/>
+        <TextField fx:id="id" layoutX="650.0" layoutY="225.0" prefHeight="50.0" prefWidth="300.0"/>
+        <TextField fx:id="consumption" layoutX="650.0" layoutY="300.0" prefHeight="50.0" prefWidth="300.0"/>
+        <TextField fx:id="source" layoutX="650.0" layoutY="375.0" prefHeight="50.0" prefWidth="300.0"/>
+        <TextField fx:id="imagePath" layoutX="650.0" layoutY="450.0" prefHeight="50.0" prefWidth="300.0"/>
+        <Label layoutX="576.0" layoutY="152.0" text="Title">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <Label layoutX="604.0" layoutY="227.0" text="ID">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <Label layoutX="382.0" layoutY="302.0" text="Consumption (Wh)">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <Label layoutX="540.0" layoutY="377.0" text="Source">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <Label layoutX="482.0" layoutY="452.0" text="Image path">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <Text layoutX="564.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add activities">
+            <font>
+                <Font size="80.0"/>
+            </font>
+        </Text>
+    </children>
+    <stylesheets>
+        <URL value="@stylesheets/general.css"/>
+        <URL value="@stylesheets/addActivity.css"/>
+    </stylesheets>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.EstimateQSingleplayerCtrl">
+    <children>
+        <Button id="exit-button" fx:id="exitButton" layoutX="75.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="100.0" prefWidth="200.0" text="Exit" />
+        <ProgressBar fx:id="timeBar" layoutX="500.0" layoutY="75.0" prefHeight="40.0" prefWidth="600.0" progress="0.84" />
+        <Text fx:id="time" layoutX="500.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Time left:" textAlignment="CENTER" wrappingWidth="600.0">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Text>
+        <Text fx:id="score" layoutX="550.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Current score: 0" textAlignment="CENTER" wrappingWidth="500.0">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Text>
+        <Text fx:id="questionNo" layoutX="1113.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="20/20">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Text>
+        <Text fx:id="question" layoutX="500.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Estimate how much energy this consumes (Wh)" textAlignment="CENTER" wrappingWidth="600.0">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="questionImage" fitHeight="250.0" fitWidth="250.0" layoutX="525.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="doubleJokerButton" layoutX="1275.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#doublePoints" prefHeight="75.0" prefWidth="75.0" styleClass="joker" text="[2]" />
+        <Button fx:id="eliminateJokerButton" layoutX="1400.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#eliminateAnswer" prefHeight="75.0" prefWidth="75.0" styleClass="joker" text="❌" />
+        <TextField fx:id="answerField" layoutX="900.0" layoutY="475.0" prefHeight="100.0" prefWidth="200.0" promptText="Answer here" styleClass="button">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <Button id="exit-button" fx:id="submitButton" layoutX="900.0" layoutY="625.0" mnemonicParsing="false" onMouseClicked="#makeChoice" prefHeight="100.0" prefWidth="200.0" text="Submit" />
+        <Text fx:id="questionText" layoutX="500.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="[question here]" textAlignment="CENTER" wrappingWidth="600.0">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text fx:id="wrongInputText" fill="RED" layoutX="500.0" layoutY="800.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Wrong input. Answer cannot be empty or contain letters/characters." textAlignment="CENTER" visible="false" wrappingWidth="600.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text fx:id="addedScore" fill="#48d75f" layoutX="813.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="+ 0" textAlignment="CENTER" visible="false" wrappingWidth="500.0">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Text>
+      <Text fx:id="revealAnswerText" layoutX="1210.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Close! Exact answer:" visible="false">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+    </children>
+    <stylesheets>
+        <URL value="@stylesheets/general.css" />
+        <URL value="@stylesheets/question.css" />
+    </stylesheets>
+</AnchorPane>

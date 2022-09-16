@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.AlternativeQMultiplayerCtrl">
+    <children>
+        <Button id="exit-button" fx:id="exitButton" layoutX="75.0" layoutY="75.0" mnemonicParsing="false"
+                prefHeight="100.0" prefWidth="200.0" text="Exit"/>
+        <ProgressBar fx:id="timeBar" layoutX="500.0" layoutY="75.0" prefHeight="40.0" prefWidth="600.0"
+                     progress="0.84"/>
+        <Text fx:id="time" layoutX="500.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2"
+              text="Time left:" textAlignment="CENTER" wrappingWidth="600.0">
+            <font>
+                <Font size="40.0"/>
+            </font>
+        </Text>
+        <Text fx:id="score" layoutX="550.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2"
+              text="Current score: 0" textAlignment="CENTER" wrappingWidth="500.0">
+            <font>
+                <Font size="40.0"/>
+            </font>
+        </Text>
+        <Text layoutX="1113.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="20/20">
+            <font>
+                <Font size="40.0"/>
+            </font>
+        </Text>
+        <Text fx:id="question" layoutX="500.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2"
+              text="Instead of ..., you could also do?" textAlignment="CENTER" wrappingWidth="600.0">
+            <font>
+                <Font size="40.0"/>
+            </font>
+        </Text>
+        <ImageView fx:id="image" fitHeight="250.0" fitWidth="250.0" layoutX="525.0" layoutY="475.0" pickOnBounds="true"
+                   preserveRatio="true"/>
+        <Button fx:id="choice1Button" layoutX="875.0" layoutY="425.0" mnemonicParsing="false" prefHeight="100.0"
+                prefWidth="200.0" styleClass="choice-button" text="Button"/>
+        <Button fx:id="choice2Button" layoutX="875.0" layoutY="550.0" mnemonicParsing="false" prefHeight="100.0"
+                prefWidth="200.0" styleClass="choice-button" text="Button"/>
+        <Button fx:id="choice3Button" layoutX="875.0" layoutY="675.0" mnemonicParsing="false" prefHeight="100.0"
+                prefWidth="200.0" styleClass="choice-button" text="Button"/>
+        <Button id="action-button" fx:id="doubleJokerButton" layoutX="1275.0" layoutY="150.0" mnemonicParsing="false"
+                prefHeight="75.0" prefWidth="75.0" text="[2]"/>
+        <Button id="action-button" fx:id="eliminateJokerButton" layoutX="1400.0" layoutY="150.0" mnemonicParsing="false"
+                prefHeight="75.0" prefWidth="75.0" text="❌"/>
+        <Button id="action-button" fx:id="scaredEmoji" layoutX="175.0" layoutY="225.0" mnemonicParsing="false"
+                prefHeight="50.0" prefWidth="50.0" text="😳"/>
+        <Button id="action-button" fx:id="skullEmoji" layoutX="250.0" layoutY="225.0" mnemonicParsing="false"
+                prefHeight="50.0" prefWidth="50.0" text="💀"/>
+        <Button id="action-button" fx:id="cryingEmoji" layoutX="100.0" layoutY="225.0" mnemonicParsing="false"
+                prefHeight="50.0" prefWidth="50.0" text="😭"/>
+        <Button id="action-button" fx:id="heartsEmoji" layoutX="25.0" layoutY="225.0" mnemonicParsing="false"
+                prefHeight="50.0" prefWidth="50.0" text="😍"/>
+        <TableView layoutX="25.0" layoutY="300.0" prefHeight="400.0" prefWidth="275.0" styleClass="noheader">
+            <columns>
+                <TableColumn fx:id="userColumn" prefWidth="150.0"/>
+                <TableColumn fx:id="emojiColumn" prefWidth="125.0" text="C2"/>
+            </columns>
+        </TableView>
+        <Button id="action-button" fx:id="timeJokerButton" layoutX="1150.0" layoutY="150.0" mnemonicParsing="false"
+                prefHeight="75.0" prefWidth="75.0" text="🕖"/>
+    </children>
+    <stylesheets>
+    </stylesheets>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.CurrentLeaderboardCtrl">
+    <children>
+        <TableView fx:id="table" layoutX="550.0" layoutY="150.0" prefHeight="500.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="playerColumn" prefWidth="250.0" text="Player" />
+                <TableColumn fx:id="scoreColumn" prefWidth="250.0" text="Points" />
+            </columns>
+        </TableView>
+        <Text layoutX="341.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="👑 Current leaderboard 👑">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Text>
+    </children>
+    <stylesheets>
+        <URL value="@stylesheets/general.css" />
+        <URL value="@stylesheets/admin.css" />
+    </stylesheets>
+</AnchorPane>

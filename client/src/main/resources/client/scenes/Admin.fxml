@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0"
+            prefWidth="1600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.scenes.AdminCtrl">
+    <children>
+        <Text layoutX="534.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1"
+              text="Admin interface" textAlignment="CENTER" wrappingWidth="572.7836608886719">
+            <font>
+                <Font size="80.0"/>
+            </font>
+        </Text>
+        <Button id="exitButton" layoutX="40.0" layoutY="725.0" mnemonicParsing="false" onAction="#back"
+                prefHeight="100.0" prefWidth="350.0" text="Exit"/>
+        <TableView fx:id="table" editable="true" layoutX="50.0" layoutY="150.0" prefHeight="550.0" prefWidth="1500.0">
+            <columns>
+                <TableColumn fx:id="colId" onEditCommit="#editQuestionId" prefWidth="150.0" text="Id"/>
+                <TableColumn fx:id="colTitle" onEditCommit="#editTitle" prefWidth="400.0" text="Title"/>
+                <TableColumn fx:id="colConsumption" onEditCommit="#editConsumption" prefWidth="114.39996337890625"
+                             text="Consumption"/>
+                <TableColumn fx:id="colSource" onEditCommit="#editSource" prefWidth="585.60009765625" text="Source"/>
+                <TableColumn fx:id="colPath" maxWidth="250.0" onEditCommit="#editImagePath" prefWidth="250.0"
+                             text="Image path"/>
+            </columns>
+        </TableView>
+        <Button layoutX="820.0" layoutY="725.0" mnemonicParsing="false" onAction="#selectAddActivities"
+                prefHeight="100.0" prefWidth="350.0" text="Add"/>
+        <Button layoutX="1210.0" layoutY="725.0" mnemonicParsing="false" onAction="#delete" prefHeight="100.0"
+                prefWidth="350.0" text="Remove"/>
+        <Button layoutX="430.0" layoutY="725.0" mnemonicParsing="false" onAction="#refresh" prefHeight="100.0"
+                prefWidth="350.0" text="Refresh"/>
+    </children>
+    <stylesheets>
+        <URL value="@stylesheets/general.css"/>
+        <URL value="@stylesheets/admin.css"/>
+    </stylesheets>
+</AnchorPane>

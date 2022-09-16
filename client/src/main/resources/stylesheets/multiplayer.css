@@ -1,0 +1,11 @@
+.action-button {
+    -fx-padding: 0px;
+    -fx-background-color: transparent;
+    -fx-font-size: 60;
+}
+
+.Vbox{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-font-size: 18px;
+}

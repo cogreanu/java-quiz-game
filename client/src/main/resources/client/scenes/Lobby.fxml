@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0"
+            prefWidth="1600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.scenes.LobbyCtrl">
+    <children>
+        <Text layoutX="175.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Multiplayer"
+              wrappingWidth="400.9367218017578">
+            <font>
+                <Font size="80.0"/>
+            </font>
+        </Text>
+        <Text layoutX="175.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2"
+              text="Waiting for players..." textAlignment="CENTER" wrappingWidth="363.5999755859375">
+            <font>
+                <Font size="40.0"/>
+            </font>
+        </Text>
+        <Polygon fill="#399efc" layoutX="581.0" layoutY="789.0" opacity="0.21"
+                 points="-41.79998779296875, 3.8000030517578125, 11.0, 28.600006103515625, -2.0, -30.0" scaleX="3.0"
+                 scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="triangle-particles"/>
+        <Polygon fill="DODGERBLUE" layoutX="1460.0" layoutY="816.0" opacity="0.21"
+                 points="-22.0, 10.79998779296875, 10.79998779296875, 3.79998779296875, -11.5999755859375, -20.39996337890625"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="DODGERBLUE" layoutX="247.0" layoutY="568.0" opacity="0.21"
+                 points="-37.20001220703125, 10.400012969970703, 14.0, 10.400012969970703, -11.5999755859375, -28.799999237060547"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="DODGERBLUE" layoutX="1493.0" layoutY="127.0" opacity="0.21"
+                 points="-43.4000244140625, -6.1999969482421875, -34.5999755859375, 31.400009155273438, -1.0, 3.8000030517578125"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#fabe57" layoutX="118.0" layoutY="385.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 26.0, 14.20001220703125, -28.399993896484375, -7.399993896484375"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#fabe57" layoutX="1508.0" layoutY="599.0" opacity="0.5"
+                 points="-33.0, 20.20001220703125, 8.5999755859375, 47.4000244140625, 8.5999755859375, -2.20001220703125"
+                 scaleX="2.5" scaleY="2.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#fabe57" layoutX="1021.0" layoutY="761.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 23.0, 34.99998474121094, -8.20001220703125, 3.8000030517578125"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#fabe57" layoutX="889.0" layoutY="111.0" opacity="0.5"
+                 points="-7.5999755859375, 42.40000915527344, 18.0, 1.5999908447265625, -30.79998779296875, 1.5999908447265625"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#f57669" layoutX="822.0" layoutY="335.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 26.0, 14.20001220703125, -28.399993896484375, -7.399993896484375"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#f57669" layoutX="124.0" layoutY="762.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 24.79998779296875, 26.4000244140625, -21.20001220703125, 3.20001220703125"
+                 rotate="41.8" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#f57669" layoutX="651.0" layoutY="51.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 9.4000244140625, 25.199996948242188, -21.20001220703125, 13.999984741210938"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Button fx:id="exitButton" layoutX="175.0" layoutY="650.0" mnemonicParsing="false" onAction="#goBack"
+                prefHeight="100.0" prefWidth="350.0" text="Exit">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <Polygon fill="#f57669" layoutX="126.0" layoutY="231.0" opacity="0.5"
+                 points="-12.4000244140625, 21.599990844726562, 7.4000244140625, -7.4000091552734375, -28.399993896484375, -7.399993896484375"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#f57669" layoutX="1527.0" layoutY="316.0" opacity="0.5"
+                 points="-29.4000244140625, 35.20000076293945, 13.79998779296875, 18.400012969970703, -21.20001220703125, -6.400006294250488"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Button fx:id="startGameButton" layoutX="625.0" layoutY="650.0" mnemonicParsing="false" onAction="#startGame"
+                prefHeight="100.0" prefWidth="350.0" styleClass="basic-button" text="Start game">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <TableView fx:id="playerTable" layoutX="1075.0" layoutY="250.0" prefHeight="500.0" prefWidth="350.0"
+                   styleClass="noheader">
+            <columns>
+                <TableColumn fx:id="colColor" prefWidth="25.0" text="Color" />
+                <TableColumn fx:id="colNickname" prefWidth="325.0" text="Nickname" />
+            </columns>
+        </TableView>
+        <Text layoutX="1075.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2"
+              text="Players in lobby:" wrappingWidth="295.1363525390625">
+            <font>
+                <Font size="70.0"/>
+            </font>
+        </Text>
+    </children>
+    <stylesheets>
+        <URL value="@stylesheets/general.css"/>
+        <URL value="@stylesheets/lobby.css"/>
+        <URL value="@stylesheets/admin.css"/>
+    </stylesheets>
+</AnchorPane>

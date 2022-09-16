@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0"
+            prefWidth="1600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.scenes.HomeScreenCtrl">
+    <children>
+        <Button fx:id="globalLeaderboardButton" layoutX="900.0" layoutY="525.0" mnemonicParsing="false"
+                onAction="#selectLeaderboard" prefHeight="100.0" prefWidth="350.0" styleClass="basic-button"
+                text="Global leaderboard"/>
+        <Text layoutX="458.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1"
+              text="Welcome to Quizzz" textAlignment="CENTER" wrappingWidth="683.7368621826172">
+            <font>
+                <Font size="80.0"/>
+            </font>
+        </Text>
+        <Text layoutX="534.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2"
+              text="An interactive quiz app to test your knowledge of sustainable energy practices"
+              textAlignment="CENTER" wrappingWidth="530.13671875">
+            <font>
+                <Font size="35.0"/>
+            </font>
+        </Text>
+        <ImageView fitHeight="100.0" fitWidth="49.0" layoutX="400.0" layoutY="100.0" pickOnBounds="true"
+                   preserveRatio="true" scaleX="2.0" scaleY="2.0">
+            <image>
+                <Image url="@media/lightning-bolg.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1164.0" layoutY="100.0" pickOnBounds="true"
+                   preserveRatio="true" scaleX="2.0" scaleY="2.0">
+            <image>
+                <Image url="@media/lightning-bolg.png"/>
+            </image>
+        </ImageView>
+        <Polygon fill="#399efc" layoutX="288.0" layoutY="208.0" opacity="0.21"
+                 points="-41.79998779296875, 3.8000030517578125, 11.0, 28.600006103515625, 4.5999755859375, -26.599990844726562"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="DODGERBLUE" layoutX="1025.0" layoutY="802.0" opacity="0.21"
+                 points="-22.0, 10.79998779296875, 10.79998779296875, 3.79998779296875, -11.5999755859375, -20.39996337890625"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="DODGERBLUE" layoutX="231.0" layoutY="394.0" opacity="0.21"
+                 points="-37.20001220703125, 10.400012969970703, 14.0, 10.400012969970703, -11.5999755859375, -28.799999237060547"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="DODGERBLUE" layoutX="1382.0" layoutY="272.0" opacity="0.21"
+                 points="-43.4000244140625, -6.1999969482421875, -34.5999755859375, 31.400009155273438, -1.0, 3.8000030517578125"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#fabe57" layoutX="1396.0" layoutY="103.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 26.0, 14.20001220703125, -28.399993896484375, -7.399993896484375"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#fabe57" layoutX="498.0" layoutY="752.0" opacity="0.5"
+                 points="-33.0, 20.20001220703125, 8.5999755859375, 47.4000244140625, 8.5999755859375, -2.20001220703125"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#fabe57" layoutX="565.0" layoutY="29.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 23.0, 34.99998474121094, -8.20001220703125, 3.8000030517578125"
+                 rotate="-40.4" scaleX="2.0" scaleY="2.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#fabe57" layoutX="1320.0" layoutY="790.0" opacity="0.5"
+                 points="-7.5999755859375, 42.40000915527344, 18.0, 1.5999908447265625, -30.79998779296875, 1.5999908447265625"
+                 rotate="16.9" scaleX="2.5" scaleY="2.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#f57669" layoutX="1451.0" layoutY="590.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 26.0, 14.20001220703125, -28.399993896484375, -7.399993896484375"
+                 rotate="46.7" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#f57669" layoutX="192.0" layoutY="558.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 24.79998779296875, 26.4000244140625, -21.20001220703125, 3.20001220703125"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#f57669" layoutX="315.0" layoutY="779.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 9.4000244140625, 25.199996948242188, -21.20001220703125, 13.999984741210938"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#f57669" layoutX="132.0" layoutY="115.0" opacity="0.5"
+                 points="-12.4000244140625, 21.599990844726562, 7.4000244140625, -7.4000091552734375, -28.399993896484375, -7.399993896484375"
+                 scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Polygon fill="#f57669" layoutX="968.0" layoutY="48.0" opacity="0.5"
+                 points="-29.4000244140625, 35.20000076293945, 13.79998779296875, 18.400012969970703, -21.20001220703125, -6.400006294250488"
+                 scaleX="2.5" scaleY="2.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Button fx:id="singlePlayerButton" layoutX="350.0" layoutY="375.0" mnemonicParsing="false"
+                onAction="#selectSinglePlayer" prefHeight="100.0" prefWidth="350.0" styleClass="basic-button"
+                text="Singleplayer game"/>
+        <Button fx:id="howToPlayButton" layoutX="900.0" layoutY="375.0" mnemonicParsing="false" onAction="#selectHelp"
+                prefHeight="100.0" prefWidth="350.0" styleClass="basic-button" text="How to play"/>
+        <Button fx:id="multiPlayerButton" layoutX="350.0" layoutY="525.0" mnemonicParsing="false"
+                onAction="#selectMultiPlayer" prefHeight="100.0" prefWidth="350.0" styleClass="basic-button"
+                text="Multiplayer game"/>
+        <Button layoutX="625.0" layoutY="675.0" mnemonicParsing="false" onAction="#selectAdminInterface"
+                prefHeight="100.0" prefWidth="350.0" text="Admin interface"/>
+        <Label fx:id="nicknameText" layoutX="1100.0" layoutY="675.0" text="Nickname:">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Label>
+        <Polygon fill="#fabe57" layoutX="1425.0" layoutY="401.0" opacity="0.5"
+                 points="-21.20001220703125, 47.79998779296875, 23.0, 34.99998474121094, -8.20001220703125, 3.8000030517578125"
+                 scaleX="2.0" scaleY="2.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0"
+                 styleClass="triangle-particles"/>
+        <Button id="exitButton" fx:id="exitButton" layoutX="100.0" layoutY="675.0" mnemonicParsing="false"
+                onAction="#goBack" prefHeight="100.0" prefWidth="150.0" text="Exit"/>
+    </children>
+    <stylesheets>
+        <URL value="@stylesheets/general.css"/>
+    </stylesheets>
+</AnchorPane>
